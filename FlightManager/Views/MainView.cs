@@ -16,5 +16,12 @@ namespace FlightManager.Views
         {
             InitializeComponent();
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            RegisterView registerView = new RegisterView();
+            registerView.Show();
+            this.Hide();
+        }
     }
 }
