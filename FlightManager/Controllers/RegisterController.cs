@@ -13,12 +13,11 @@ namespace FlightManager.Controllers
         {
             using (FlightsDBEntities adbe = new FlightsDBEntities())
             {
-                int lastUserId = adbe.Accounts.ToList().LastOrDefault().Id;
                 var lastUser = adbe.Accounts.ToList().LastOrDefault();
 
                 if (lastUser == null)
                 {
-                    lastUser = new Account();
+                    lastUser = acc;
                     lastUser.Id = 0;
                 }
 
@@ -26,7 +25,7 @@ namespace FlightManager.Controllers
                 adbe.Accounts.Add(acc);
                 adbe.SaveChanges();
 
-                return lastUserId;
+                return lastUser.Id;
             }
         }
     }
