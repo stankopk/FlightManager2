@@ -1,4 +1,5 @@
-﻿using FlightManager.Models;
+﻿using FlightManager.Global_Data;
+using FlightManager.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,12 +21,10 @@ namespace FlightManager.Controllers
                     {
                         if (exsistingAccount.IsAdmin == true)
                         {
-                            return "Admin";
+                            Data.isAdmin = true;
                         }
-                        else
-                        {
-                            return null;
-                        }
+                        Data.currLoggedName = exsistingAccount.FirstName;
+                        return null;
                     }
                     else
                     {
