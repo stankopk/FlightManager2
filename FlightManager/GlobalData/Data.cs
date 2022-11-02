@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace FlightManager.GlobalData
 {
-    static class Data
+    public static class Data
     {
-        static string currLoggedUsername = "asd";
+        static string currLoggedUsername = "";
     }
 }
