@@ -70,6 +70,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="GlobalData\Data.cs" />
     <Compile Include="Models\Account.cs">
@@ -103,6 +104,11 @@
     </Compile>
     <Compile Include="Views\GeneralView.Designer.cs">
       <DependentUpon>GeneralView.cs</DependentUpon>
+    <Compile Include="Views\LoginView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LoginView.Designer.cs">
+      <DependentUpon>LoginView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\MainView.cs">
       <SubType>Form</SubType>
@@ -127,6 +133,8 @@
     </Compile>
     <EmbeddedResource Include="Views\GeneralView.resx">
       <DependentUpon>GeneralView.cs</DependentUpon>
+    <EmbeddedResource Include="Views\LoginView.resx">
+      <DependentUpon>LoginView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MainView.resx">
       <DependentUpon>MainView.cs</DependentUpon>

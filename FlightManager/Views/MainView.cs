@@ -23,5 +23,12 @@ namespace FlightManager.Views
             registerView.Show();
             this.Hide();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            LoginView login = new LoginView();
+            login.Show();
+            this.Hide();
+        }
     }
 }
