@@ -36,7 +36,9 @@ namespace FlightManager.Views
             }
             else if (Data.isAdmin)
             {
-                //To General Admin View
+                AdminGeneralView general = new AdminGeneralView();
+                general.Show();
+                this.Hide();
             }
             else
             {
