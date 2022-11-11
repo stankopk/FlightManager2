@@ -1,4 +1,5 @@
 ﻿using FlightManager.Controllers;
+using FlightManager.Global_Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,13 +34,15 @@ namespace FlightManager.Views
             {
                 MessageBox.Show(message);
             }
-            else if (message == "Admin")
+            else if (Data.isAdmin)
             {
-                //To General Normal View
+                //To General Admin View
             }
             else
             {
-                //To General Admin View
+                GeneralView general = new GeneralView();
+                general.Show();
+                this.Hide();
             }
         }
     }
