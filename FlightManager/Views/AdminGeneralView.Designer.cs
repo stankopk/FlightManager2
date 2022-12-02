@@ -31,7 +31,7 @@
             this.lblWelcome = new System.Windows.Forms.Label();
             this.btnBookings = new System.Windows.Forms.Button();
             this.btnFlights = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnUsers = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblWelcome
@@ -67,23 +67,24 @@
             this.btnFlights.Text = "Flights";
             this.btnFlights.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnUsers
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(518, 256);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 79);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Users";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnUsers.Location = new System.Drawing.Point(518, 256);
+            this.btnUsers.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUsers.Name = "btnUsers";
+            this.btnUsers.Size = new System.Drawing.Size(150, 79);
+            this.btnUsers.TabIndex = 12;
+            this.btnUsers.Text = "Users";
+            this.btnUsers.UseVisualStyleBackColor = true;
+            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
             // AdminGeneralView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnUsers);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnBookings);
             this.Controls.Add(this.btnFlights);
@@ -99,6 +100,6 @@
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.Button btnBookings;
         private System.Windows.Forms.Button btnFlights;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnUsers;
     }
 }
