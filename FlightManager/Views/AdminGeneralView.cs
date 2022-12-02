@@ -22,5 +22,12 @@ namespace FlightManager.Views
         {
             lblWelcome.Text = $"Welcome back, {Data.currLoggedName}";
         }
+
+        private void btnBookings_Click(object sender, EventArgs e)
+        {
+            BookingsView generalView = new BookingsView();
+            generalView.Show();
+            this.Hide();
+        }
     }
 }

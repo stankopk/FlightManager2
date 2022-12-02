@@ -72,6 +72,11 @@
   <ItemGroup>
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
+    <Compile Include="FlightsDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlightsDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Global Data\Data.cs" />
     <Compile Include="Models\Account.cs">
       <DependentUpon>FlightsDBModel.tt</DependentUpon>
@@ -104,6 +109,12 @@
     </Compile>
     <Compile Include="Views\AdminGeneralView.Designer.cs">
       <DependentUpon>AdminGeneralView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BookingsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BookingsView.Designer.cs">
+      <DependentUpon>BookingsView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\GeneralView.cs">
       <SubType>Form</SubType>
@@ -141,6 +152,9 @@
     <EmbeddedResource Include="Views\AdminGeneralView.resx">
       <DependentUpon>AdminGeneralView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\BookingsView.resx">
+      <DependentUpon>BookingsView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\GeneralView.resx">
       <DependentUpon>GeneralView.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +171,17 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>FlightsDBModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="FlightsDBDataSet.xsc">
+      <DependentUpon>FlightsDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FlightsDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FlightsDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FlightsDBDataSet.xss">
+      <DependentUpon>FlightsDBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Models\FlightsDBModel.edmx.diagram">
       <DependentUpon>FlightsDBModel.edmx</DependentUpon>
     </None>

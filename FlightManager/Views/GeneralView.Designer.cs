@@ -38,7 +38,7 @@
             // 
             this.btnFlights.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnFlights.Location = new System.Drawing.Point(441, 289);
-            this.btnFlights.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnFlights.Margin = new System.Windows.Forms.Padding(2);
             this.btnFlights.Name = "btnFlights";
             this.btnFlights.Size = new System.Drawing.Size(150, 79);
             this.btnFlights.TabIndex = 4;
@@ -49,12 +49,13 @@
             // 
             this.btnBookings.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnBookings.Location = new System.Drawing.Point(223, 289);
-            this.btnBookings.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBookings.Margin = new System.Windows.Forms.Padding(2);
             this.btnBookings.Name = "btnBookings";
             this.btnBookings.Size = new System.Drawing.Size(150, 79);
             this.btnBookings.TabIndex = 5;
             this.btnBookings.Text = "Bookings";
             this.btnBookings.UseVisualStyleBackColor = true;
+            this.btnBookings.Click += new System.EventHandler(this.btnBookings_Click);
             // 
             // lblThankYou
             // 
@@ -86,7 +87,7 @@
             this.Controls.Add(this.lblThankYou);
             this.Controls.Add(this.btnBookings);
             this.Controls.Add(this.btnFlights);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GeneralView";
             this.Text = "GeneralView";
             this.Load += new System.EventHandler(this.GeneralView_Load);
