@@ -21,5 +21,15 @@ namespace FlightManager.Views
         {
             lblHello.Text = $"Hello, {Data.currLoggedName}";
         }
+
+        private void lblThankYou_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblHello_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

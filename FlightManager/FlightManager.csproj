@@ -137,6 +137,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Views\AdminGeneralView.resx">
       <DependentUpon>AdminGeneralView.cs</DependentUpon>
@@ -193,6 +194,8 @@
       <DependentUpon>FlightsDBModel.edmx</DependentUpon>
       <LastGenOutput>FlightsDBModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\flightmanagerlogo.png" />
+    <None Include="Resources\ariportbackground.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
