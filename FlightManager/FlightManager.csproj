@@ -194,6 +194,7 @@
       <DependentUpon>FlightsDBModel.edmx</DependentUpon>
       <LastGenOutput>FlightsDBModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\lobbybackground.jpg" />
     <None Include="Resources\flightmanagerlogo.png" />
     <None Include="Resources\ariportbackground.jpg" />
   </ItemGroup>
